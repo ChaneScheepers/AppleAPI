@@ -1,0 +1,160 @@
+/* App styling */
+.App {
+  text-align: center;
+  font-size: 20px;
+  background-color: grey;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(233, 236, 249);
+  display: flex;
+  justify-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* Header container - top of page*/
+.header-container {
+  padding: 20px 100px;
+  width: 1500px;
+  text-align: center;
+  background-color: white;
+  margin: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 5px 5px 0 #00000030;
+}
+
+.output-container-section {
+  padding: 50px;
+}
+
+/* Wrapping of search container. */
+.search-container {
+  background-color: white;
+  width: 1500px;
+  margin: auto;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 5px 0 #00000030;
+}
+/* Search Bar wider  */
+.search-box {
+  width: 60%;
+}
+/* Search bar flex, all items next to each other.  */
+form {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* buttons */
+/* Submit button */
+.submit-btn .btn:hover {
+  background-color: rgb(131, 138, 172);
+}
+
+/* trash icon */
+.fav-item .remove-btn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  color: red;
+}
+
+.fav-item .remove-btn button:hover {
+  color: #c40000;
+  background-color: transparent;
+}
+
+/* heart icon*/
+.output-item .heart-btn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  color: #00000035;
+}
+
+.output-item .heart-btn .clicked {
+  color: pink;
+}
+
+.output-item .heart-btn button:hover {
+  color: #b08cb9;
+  background-color: transparent;
+}
+
+/* Display of content/feedback*/
+/* Style the outputted item */
+.output-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Style the overall item */
+.output-item {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  background-color: #ffffffd8;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px 0 #00000030;
+  border: currentColor;
+  gap: 15px;
+}
+
+/* Style the item info section */
+.output-item .item-info {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+
+.output-item .btns {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Style the search section */
+.search-container-section {
+  margin-bottom: 15px;
+}
+
+/* Style the container with all the favourites if 'favourites' is not empty */
+.fav-items {
+  display: flex;
+  margin: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+/* Style the overall item */
+.fav-item {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  background-color: #ffffffd8;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px 0 #00000030;
+  border: currentColor;
+  gap: 15px;
+}
+
+/* Style the item info section */
+.fav-item .item-info {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
