@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const axios = require("axios");
+const helmet = require('helmet')
 
 const bodyParser = require("body-parser");
 const PORT = 2000;
@@ -9,6 +9,8 @@ const PORT = 2000;
 const routes = require("./routes/index");
 
 const app = express();
+// Use Helmet!
+app.use(helmet());
 
 app.use(express.json());
 app.use(cors());

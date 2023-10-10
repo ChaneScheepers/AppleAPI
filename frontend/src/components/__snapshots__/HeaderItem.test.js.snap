@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FavItem basic render 1`] = `
+<div
+  className="header-container"
+>
+  iTunes API search App
+</div>
+`;

@@ -4,7 +4,10 @@ import axios from "axios";
 
 // Import items from Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart as faSolidHeart } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHeart as faSolidHeart,
+  faV,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Item = ({ item, fetchFavourites, favourites }) => {
   // UseState to save wether the item has been added to favourites or not

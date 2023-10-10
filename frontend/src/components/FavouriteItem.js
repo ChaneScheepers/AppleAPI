@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 
 // Import items from Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,17 +8,18 @@ import { faTrash as faSolidTrash } from "@fortawesome/free-solid-svg-icons";
 const FavItem = ({ item, fetchFavourites }) => {
   //Remove item from 'fav' (api call and function)
 
-  const removeItem = async () => {
-    await fetch(`http://localhost:2000/api/${item.id}`, {
-      method: "DELETE",
-    });
-    fetchFavourites();
-  };
-
+  // Function that handles removing an item from 'favourites'
   const handleRemove = (e) => {
     e.preventDefault();
-    removeItem();
+    // setILikeThis(false);
+    const response = axios
+      .delete(`http://localhost:2000/api/delete/${item.id}`)
+      .then((data) => {
+        console.log(data);
+        fetchFavourites();
+      });
   };
+
 
   /*The below codes is a conditional statement indicating if a 
   (image, collection name or type exists to display it, else use text)*/
